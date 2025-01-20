@@ -6,12 +6,13 @@
 
 
 *{
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
 
 body{
-    overflow-x: hidden;
+   
     background: rgb(247, 247, 247);
 }
 
@@ -258,9 +259,12 @@ font-weight: 700;
 /*--------------- Mobile responsive --------- */
 
 @media screen and (max-width:576px) {
+   
+    
     .main-nav{
         visibility: hidden;
     }
+
     .for-mobile{
         visibility: visible; 
        }
@@ -269,6 +273,7 @@ font-weight: 700;
         width: 46px;
         height: 46px;
        }
+
 
        .for-mobile i{
         font-size: 30px;
@@ -302,6 +307,12 @@ font-weight: 700;
         gap: 30px;
 
         padding-bottom: 40px;
+
+     .curriculum-container{
+        margin-left: 10px;
+        margin-right: 10px;
+     }
+        
        
        }
 
@@ -309,7 +320,7 @@ font-weight: 700;
         max-width: 357px;
         height: 321px;
         gap: 10px;
-        margin: 0px 10px;
+       
        }
 
        .kids-div img{
