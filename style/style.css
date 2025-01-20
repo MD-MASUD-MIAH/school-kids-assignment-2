@@ -6,14 +6,15 @@
 
 
 *{
-    overflow-y: hidden;
-    overflow-x: hidden;
+   
+    
     margin: 0;
     padding: 0;
 }
 
 body{
-   
+    
+  overflow-x: hidden;
     background: rgb(247, 247, 247);
 }
 
@@ -23,6 +24,7 @@ body{
 
 
 header{
+    overflow-x: hidden;
     max-width: 1160px;
     margin: 0 auto;
 background: rgb(247, 247, 247);
