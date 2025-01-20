@@ -1,0 +1,135 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inder&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    background: rgb(247, 247, 247);
+}
+
+
+
+
+
+
+header{
+    max-width: 1160px;
+    margin: 0 auto;
+background: rgb(247, 247, 247);
+}
+
+/* -----------------------sherd style -----------------  */
+
+.quick{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .btn{
+    width: 197px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 12px;
+    border: none;
+  }
+
+  .btn:hover{
+    background-color: rgb(1, 172, 253);
+  }
+
+
+/* -----------------------nav style -----------------  */
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+   
+    
+    
+}
+
+.navbar ul{
+ display: flex;
+ gap: 50px;
+
+}
+
+.navbar ul li{
+    list-style-type: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.bag h1{
+
+font-size: 2rem;
+font-weight: 700;
+
+}
+.bag{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar button{
+    background: rgb(254, 163, 1);
+}
+
+
+.for-mobile{
+    visibility: hidden;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 12px;
+    border-bottom: 1px solid rgb(254, 163, 1);;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    .main-nav{
+        visibility: hidden;
+    }
+    .for-mobile{
+        visibility: visible; 
+       }
+
+       .for-mobile img{
+        width: 46px;
+        height: 46px;
+       }
+
+       .for-mobile i{
+        font-size: 30px;
+       }
+}
