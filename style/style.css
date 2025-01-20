@@ -102,6 +102,36 @@ font-weight: 700;
     border-bottom: 1px solid rgb(254, 163, 1);;
 }
 
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    max-width: 640px;
+    margin-bottom: 24px;
+}
+
+.sub-title{
+
+    font-size: 1.25rem;
+    max-width: 640px;
+    margin-bottom: 24px;
+}
+
+.hero-btn{
+    background-color: black;
+}
+
+
+
+.hero-2 img{
+    width: 100%;
+    
+}
 
 
 
@@ -115,6 +145,16 @@ font-weight: 700;
 
 
 
+
+
+
+
+
+
+
+
+
+/*--------------- Mobile responsive --------- */
 
 @media screen and (max-width:576px) {
     .main-nav{
@@ -132,4 +172,62 @@ font-weight: 700;
        .for-mobile i{
         font-size: 30px;
        }
+       .hero-container{
+        flex-direction: column-reverse;
+        justify-items: center;
+        gap: 30px;
+        padding: 0px 10px;
+       
+       }
+       .hero-1{
+        text-align: center;
+       }
+       .hero-title{
+        font-size: 2rem;
+       }
+       .sub-title{
+        font-size: 14px;
+       }
+
+       .hero-btn{
+        width: 131px;
+        height: 41px;
+        font-size: 1rem;
+       }
+}
+
+
+
+
+/*--------------- Tablet responsive --------- */
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    
+
+    .main-nav{
+        visibility: hidden;
+    }
+    .for-mobile{
+        visibility: visible; 
+       }
+
+       .for-mobile img{
+        width: 46px;
+        height: 46px;
+       }
+
+       .for-mobile i{
+        font-size: 30px;
+       }
+
+       .hero-container{
+        flex-direction: column-reverse;
+        justify-items: center;
+        gap: 30px;
+        padding: 0px 10px;
+       }
+       .hero-1{
+        text-align: center;
+       }
+
 }
