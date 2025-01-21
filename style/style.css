@@ -89,17 +89,7 @@ text-align: center;
  background-color:white;
   }
 
-  .story-btn{
-    position: relative;
-    border-radius: 48px;
-    border: none;
-    padding: 10px 29px;
-    font-weight: 500;
-    font-size: 1rem;
-    color: white;
-    margin-left: 38px;
-    margin-top: 157.5px;
-  }
+  
 
 /* -----------------------nav style -----------------  */
 
@@ -108,6 +98,7 @@ text-align: center;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+   
    
     
     
@@ -142,11 +133,14 @@ font-weight: 700;
     background: rgb(254, 163, 1);
 }
 
+.mobile{
+    display: none;
+}
 
-.for-mobile{
-    visibility: hidden;;
-    display: flex;
-    justify-content: space-between;
+ .mobile .for-mobile{
+    
+  display: flex;
+  justify-content: space-between;
     align-items: center;
     padding: 16px 12px;
     border-bottom: 1px solid rgb(254, 163, 1);;
@@ -159,6 +153,7 @@ font-weight: 700;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
+    margin-top: 30px;
 }
 
 .hero-title{
@@ -192,7 +187,7 @@ font-weight: 700;
 .curriculum-container{
     max-width: 1160px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 .curriculum-container h1{
     text-align: center;
@@ -260,7 +255,7 @@ font-weight: 700;
 /*  ----------------------- Stories style -----------------  */
 
 .our-stories{
-    height: 1018px;
+    /* height: 1018px;  */
     background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
     /* max-width: 1140px; */
     margin-top: 50px;
@@ -281,137 +276,144 @@ font-weight: 700;
     padding-bottom: 80px;
 }
 
-.stories-on{
-    display: flex;
-    gap: 19px;
-}
-
-.stories-1{
-    width: 540px;
-    height: 630px;
-    border-radius: 16px;
-background-color: white;
-overflow: hidden;
-background-image: url(../assets/story-1.png);
-background-repeat: no-repeat;
-}
-
-.stories-1 img{
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    position: absolute;
-    object-fit: cover;
-    
-    
-    
-}
-
-
-
-.st-btn{
-    position: relative;
-border-radius: 48px;
-background: rgb(60, 216, 232);
-border: none;
-padding: 15px 20px;
-font-weight: 500;
-font-size: 1rem;
-color: white;
-margin-top: 314px;
-margin-left: 38px;
-}
-.story-sub-title{
-    font-size: 1.5rem;
-    font-size: 700;
-    margin-left: 38px;
-    line-height: 38.35px;
-    margin-top: 36px;
-}
-.story-description{
-    margin-left: 38px;
-    margin-top: 30px;
-    text-align: left;
-    font-size: 1rem;
-   font-weight: 500;
-   line-height: 28px;
-}
-
-.story{
-width: 290px;
-height: 301px;
-background-color: white;
-border-radius: 16px;
-}
-
-.story-img{
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    position: absolute;
-}
-
-.fits{
-  font-size: 1rem;
-  font-weight: 700;  
-  margin-left: 38px;
-  margin-top: 20px;
-  line-height: 29px;
-}
-
-.stories-2{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 19px;
-}
-
-.story-btn-4, .story-btn-3{
-    margin-top: 161px;
-}
-
-.story-style-1{
-    background-image: url(../assets/story-2.png);
-    background-repeat: no-repeat;
-}
-.story-style-2{
-    background-image: url(../assets/story-3.png);
-    background-repeat: no-repeat;
-}
-
-.story-style-3{
-    background-image: url(../assets/story-4.png);
-    background-repeat: no-repeat;
-}
-.story-style-4{
-    background-image: url(../assets/story-5.png);
-    background-repeat: no-repeat;
-}
 
 .last-btn{
     background-color: black;
-    margin-top: 80px;
- margin-bottom: 60px;"
+    margin-top: 30px;
+ 
 }
+
+.last-btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+
+.story-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card-two{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.card{
+    background-color: white;
+    border-radius: 16px;
+    position: relative;
+    display: inline-block;
+
+   
+}
+
+.card img{
+    
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    
+    display: block;
+}
+
+ .card .btn-tag{
+    position: absolute;
+    padding: 15px 20px;
+    border-radius: 47.93px;
+    background: rgb(60, 216, 232);
+    width: 174.5px;
+    text-align: center;
+    margin-top:-26px;
+     margin-left: 38px;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+
+.card div .card-title{
+   
+   font-size: 1.5rem;
+   font-weight: 700;
+   line-height: 39px;
+
+   text-align: left;
+   margin-left: 38px;
+  margin-bottom: 30px;
+  margin-top: 33px;
+}
+
+
+.card-description{
+    color: rgb(102, 102, 102);
+font-family: Raleway;
+font-size: 15.34px;
+font-weight: 500;
+line-height: 28.76px;
+letter-spacing: 0%;
+margin-left: 38px;
+margin-bottom: 35px;
+}
+
+.card-bn{
+
+    position: absolute;
+    padding: 10px 16px;
+    border-radius: 47.93px;
+    background: rgb(60, 216, 232);
+    width: 174.5px;
+    text-align: center;
+    margin-top: -20px;
+    margin-left: 36px;
+    border: none;
+    color: white;
+    font-weight: 700;
+
+}
+
+.tag-card{
+font-size: 1rem;
+font-weight: 700;
+line-height: 28.76px;
+margin-left: 36px;
+margin-top: 43px;
+
+
+}
+
+
+
+
 
 /*--------------- Mobile responsive --------- */
 
 @media screen and (max-width:576px) {
    
     main{
-       padding: 10px 10px;
+       
     }
     
     .main-nav{
-        visibility: hidden;
+       display: none;
     }
 
+    
+
+
     .for-mobile{
-        visibility: visible; 
+       display: block; 
        }
 
        .for-mobile img{
         width: 46px;
         height: 46px;
        }
-
+       .mobile{
+        display: block;
+    }
 
        .for-mobile i{
         font-size: 30px;
@@ -421,6 +423,8 @@ border-radius: 16px;
         justify-items: center;
         gap: 30px;
         padding: 0px 10px;
+
+        margin-top: 20px;
        
        }
        .hero-1{
@@ -452,8 +456,11 @@ border-radius: 16px;
 
 
 .curriculum-container{
-    margin-right: 5px;
-    margin-left: 5px;
+   
+}
+.kids-container{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
        .kids-div{
@@ -477,23 +484,44 @@ border-radius: 16px;
         display: none;
        }
 
-
-       .stories-1{
+       .card-two{
         display: none;
-    }
+       }
 
-    .story{
-        width: 173x;
-        height: 179px;
-        background-color: white;
-        border-radius: 16px;
-        }
+
+       .story-card-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+       }
+
+       .card{
         
+       }
 
+       .card-bn{
+        width: 120px;
+        height: 30px;
+        font-size: 10px;
+        margin-top: -18px;
+        margin-left: 22px;
+       }
 
-}
+       .tag-card{
+        font-size: 12px;
+        margin-top: 25px;
+        margin-left: 22px;
+        line-height: 17px;
+        margin-bottom: 20px;
+       }
 
+       .last-btn{
+        width: 134px;
+       height: 30px;
+       font-size: 1rem;
+       }
 
+    }
+       
 
 
 /*--------------- Tablet responsive --------- */
@@ -502,11 +530,15 @@ border-radius: 16px;
     
 
     .main-nav{
-        visibility: hidden;
-    }
-    .for-mobile{
-        visibility: visible; 
-       }
+        display: none;
+     }
+ 
+     
+ 
+ 
+     .mobile{
+        display: block; 
+        }
 
        .for-mobile img{
         width: 46px;
@@ -521,7 +553,7 @@ border-radius: 16px;
         flex-direction: column-reverse;
         justify-items: center;
         gap: 30px;
-        padding: 0px 10px;
+        
        }
        .hero-1{
         text-align: center;
@@ -532,4 +564,35 @@ border-radius: 16px;
         justify-items: center;
         gap: 30px;
        }
+
+
+       .stories-1{
+        display: none;
+        
+    }
+
+    .story-card-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .story-card-container .card .card-bn{
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+        margin-top: -25px;
+        margin-left: 22px;
+       }
+
+      .card .tag-card{
+        font-size: 16px;
+        margin-top: 60px;
+        margin-left: 22px;
+        line-height: 20px;
+        margin-bottom: 30px;
+        width: 75%;
+        
+       }
+
+
 }
