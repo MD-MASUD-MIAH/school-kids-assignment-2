@@ -633,8 +633,9 @@ margin-bottom: 32px;
 
 
     }
-       
-
+    .edu-kid div{
+        justify-content: left;
+    }
 
 /*--------------- Tablet responsive --------- */
 
@@ -714,5 +715,23 @@ margin-bottom: 32px;
 
        .card-bn{
         width: 75%;
+
+
+    }
+
+    .edu-kid div{
+        justify-content: left;
+    }
+
+
+    .footer-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 50px;
+        padding-bottom: 50px;
+        padding-left: 120px;
        }
+
+       .edu-kid h1{
+        font-size: 2rem;
+    }
 }
