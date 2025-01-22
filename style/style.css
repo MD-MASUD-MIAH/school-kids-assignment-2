@@ -548,13 +548,18 @@ margin-bottom: 32px;
         
 }
 
-
 .curriculum-container{
+    margin-top: 30px;
+}
+
+.curriculum-container h1{
+   font-size: 26px;
+   padding-top: 30px;
+   padding-bottom: 20px;
    
 }
 .kids-container{
-    /* margin-left: 10px;
-    margin-right: 10px; */
+   margin-top: 30px;
 }
 
        .kids-div{
