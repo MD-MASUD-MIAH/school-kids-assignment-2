@@ -10,6 +10,7 @@
     
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -25,10 +26,11 @@ body{
 
 header{
     overflow-x: hidden;
-    max-width: 1160px;
+     max-width: 80%;
     margin: 0 auto;
 background: rgb(247, 247, 247);
 }
+
 
 main{
    
@@ -135,6 +137,7 @@ font-weight: 700;
 
 .mobile{
     display: none;
+   
 }
 
  .mobile .for-mobile{
@@ -149,6 +152,7 @@ font-weight: 700;
 /* --------------------hero section style ----------------  */
 
 .hero-container{
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -185,7 +189,7 @@ font-weight: 700;
 /* -------------------curriculum style -----------------  */
 
 .curriculum-container{
-    max-width: 1160px;
+    max-width: 80%;
     margin: 0 auto;
     margin-top: 60px;
 }
@@ -199,11 +203,12 @@ font-weight: 700;
     margin-top: 80px;
     display: grid ;
     grid-template-columns: repeat(3,1fr);
+    gap: 24px;
 }
 
 .kids-div{
-    width: 367px;
-    height: 476px;
+    /* width: 367px;  */
+    /* height: 476px;  */
     box-sizing: border-box;
     border: 0.94px solid rgb(222, 245, 255);
     border-radius: 19px;
@@ -213,7 +218,10 @@ font-weight: 700;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 30px;
+
+    padding-bottom: 58px;
+    padding-top: 52px;
 
 }
 
@@ -230,7 +238,7 @@ font-weight: 700;
 
   font-size: 1.5rem;
   font-weight: 700;
-  padding-top: 2px;
+  padding-top: 32px;
 
 }
 .left-arrow,.right-arrow{
@@ -262,7 +270,7 @@ font-weight: 700;
 }
 
 .stories-container{
-    max-width: 1160px;
+    max-width: 80%;
     margin: 0 auto;
     justify-items: center;
 }
@@ -381,6 +389,7 @@ line-height: 28.76px;
 margin-left: 36px;
 margin-top: 43px;
 
+margin-bottom: 33px;
 
 }
 
@@ -391,7 +400,7 @@ footer{
 
 .footer-container{
 
-    max-width: 1160px;
+    max-width: 80%;
     margin: 0 auto;
     padding-bottom: 174px;
     padding-top: 123px;
@@ -414,6 +423,9 @@ footer{
 
 @media screen and (max-width:576px) {
    
+    .navbar{
+        max-width: 100%;
+    }
     main{
        
     }
@@ -426,6 +438,7 @@ footer{
 
 
     .for-mobile{
+
        display: block; 
        }
 
@@ -435,6 +448,7 @@ footer{
        }
        .mobile{
         display: block;
+        max-width: 100%;
     }
 
        .for-mobile i{
@@ -481,14 +495,14 @@ footer{
    
 }
 .kids-container{
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
 }
 
        .kids-div{
-        max-width: 357px;
-        height: 321px;
+       
         gap: 10px;
+        padding: 36px 81px;
        
        }
 
@@ -513,7 +527,7 @@ footer{
 
        .story-card-container{
         grid-template-columns: repeat(2,1fr);
-        gap: 15px;
+        gap: 10px;
        }
 
        .card{
@@ -521,9 +535,9 @@ footer{
        }
 
        .card-bn{
-        width: 120px;
+        width: 75%;
         height: 30px;
-        font-size: 10px;
+        font-size: 8px;
         margin-top: -18px;
         margin-left: 22px;
        }
@@ -561,7 +575,12 @@ footer{
      }
  
      
- 
+     .kids-div{
+       
+        gap: 10px;
+        padding: 36px 81px;
+       
+       }
  
      .mobile{
         display: block; 
@@ -622,4 +641,7 @@ footer{
        }
 
 
+       .card-bn{
+        width: 75%;
+       }
 }
